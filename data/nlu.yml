@@ -1,0 +1,191 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: chitchat/thanks
+  examples: |
+    - thx
+    - Awesome, thanks!
+    - thanks mate
+    - thank you
+- intent: chitchat/confirm_presence
+  examples: |
+    - are you there?
+- intent: chitchat/capabilities
+  examples: |
+    - What else can you do?
+    - what can you do?
+- intent: chitchat/mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - cool beans
+- intent: chitchat/mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - this is not working
+    - you suck
+- intent: chitchat/bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: chitchat/goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - Thanks
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    
+- intent: tell_name
+  examples: |
+    - What is your name?
+    - Who are you ?
+    - Tell me your name 
+    - Do u have a name ?
+    
+- intent: user_name
+  examples: |
+    - my name is [Vivek]{"entity":"name"}
+    - people call me [Vivek]{"entity":"name"}
+    - [Vivek]{"entity":"name"}
+    
+- intent: user_number
+  examples: | 
+    - my number is [2323232323]{"entity":"number"}     
+    - [2323232232]{"entity":"number"}  
+    - [2323232232]{"entity":"number"}  is my number
+    
+- intent: play_video
+  examples: |
+    - play this video
+    - open this video
+    - open this url 
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: out_of_scope
+  examples: |
+    - what is 2+2?
+    - who is your super power?
+    - What is the color of the sky?
+  

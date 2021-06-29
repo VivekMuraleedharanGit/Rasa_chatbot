@@ -1,0 +1,72 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  
+- story: happy path_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: chitchat/mood_great
+  - action: utter_chitchat
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  - checkpoint: play_action_checkpoint
+  
+- story: video play
+  steps:
+  - checkpoint: play_action_checkpoint
+  - intent: play_video
+  - action: action_video
+
+
+# - story : identity
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: tell_name
+#   - action: utter_name
+
+  
+# - story : identity_2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - action: utter_user_name
+#   - intent: user_name
+#     entities:
+#     - name: "rahul"
+#   - slot_was_set:
+#       - name: "rahul"
+#   - action: utter_user_number
+#   - intent: user_number
+#     entities: 
+#     - number: "2345678901"
+#   - slot_was_set:
+#       - number: "2345678901"
+#   - action: utter_thanks
+  
