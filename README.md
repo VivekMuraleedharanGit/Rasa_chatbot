@@ -3,7 +3,8 @@
 Conversational chatbot using Rasa framework
 
 In Terminal rasas input and output will look like this
-![Capture](https://user-images.githubusercontent.com/23051888/123743393-d09ee600-d8ca-11eb-8642-9cf35ea7e800.PNG)
+![Capture](https://user-images.githubusercontent.com/23051888/123743816-6c305680-d8cb-11eb-950f-51370089dd02.PNG)
+
 
 ## We can integrate this with pur website and giving UI to it like this 
 
