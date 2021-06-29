@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Predictor App</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Loan eligibility Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="married(1 if yes 0 is no") placeholder="Married" required="required" />
+      <input type="text" name="credit_history" placeholder="Credit_History" required="required" />
+		  <input type="text" name="Total Income" placeholder="TotalIncome" required="required" />
+      <input type="text" name="Coapplicant Income" placeholder="CoapplicantIncome" required="required" />
+      <input type="text" name="LoanAmount" placeholder="LoanAmount" required="required" />
+      <input type="text" name="Applicant Income" placeholder="ApplicantIncome" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+<script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+              (e.src =
+             "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+              (e.async = !0),
+              (e.onload = () => {
+              
+                 window.WebChat.default(
+                {
+                
+                
+                 initPayload : "/greet",
+                 customData: { language: "en" },
+                 socketUrl: "http://localhost:5005",
+                 title :"chatwithme"
+                // add other props here
+                },
+                null
+           );
+           }),
+           t.insertBefore(e, t.firstChild);
+           })();
+        </script>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
