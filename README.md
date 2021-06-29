@@ -24,4 +24,4 @@ You can checkout here to understand it more : https://www.youtube.com/watch?v=eJ
 6. running the rasa server -- rasa run 
 7. running the chat bot from api is by -- rasa run -m models --enable-api --cors "*"
 
-## More details about rasa can be found here : https://rasa.com/docs/
+## More details about rasa can be found here : https://rasa.com/docs/ & https://github.com/RasaHQ/rasa
